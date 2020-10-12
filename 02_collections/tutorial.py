@@ -1,3 +1,5 @@
+# day 4
+
 from collections import namedtuple, defaultdict, Counter, deque
 import random
 import timeit
