@@ -14,13 +14,13 @@ def timer(minutes):
     timer = datetime.datetime.combine(d, t)
     dt = datetime.timedelta(seconds=1)
     
-    for i in range(minutes * 60):
+    for _ in range(minutes * 60):
         os.system('clear')
         timer -= dt
         print(f'Timer: {timer.minute:02}:{timer.second:02}')
         time.sleep(1)
 
-    print("Time's up! Time for break.")
+    print("Time's up! Take a break.")
     playsound('bell.mp3', False)
     time.sleep(5)
     exit()
